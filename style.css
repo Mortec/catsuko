@@ -1,0 +1,484 @@
+:root {
+  --primary: transparent;
+  --secondary: yellow;
+  --white: white;
+  --black: #000000;
+  --orange: orange;
+}
+
+html{
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden; 
+}
+body {  
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/Catsuko_Backgound.jpg");
+  background-size: cover;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  padding: 0px;
+  margin: 0px;  
+  overflow-x: hidden;
+}
+
+
+
+main {
+  padding: 0px;
+  margin: 0px;
+  width: 100vh;
+  height: 100vh;
+  clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: calc( (100vh - 100vw) / -2 );
+}
+
+.card {
+  width: 100vw;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+header {
+  width: 100%;
+  height: 8%;
+  position: relative;
+  background-image: url("images/Catsuko_Clip.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.6em;
+  word-spacing: 0.3em;
+}
+
+
+.video_title {
+  margin-top: 0.5em;
+  width: 100%;
+  text-align: center;
+}
+
+#video {
+  margin-top: 0.5em;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40%;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 0px 0px 20px 1px #b9b9b91c;
+  overflow: hidden;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/Gif_Intro_Blitz.gif");
+  background-size: cover;
+  background-position: bottom;
+  overflow: hidden;
+}
+
+.video_picture {
+  width: 100%;
+  height: 92%;
+  overflow: hidden;
+}
+
+.video_link {
+  width: 100%;
+  text-align: center;
+  top: -2em;
+  overflow: hidden;
+  
+}
+
+.play_icon {
+  position: absolute;
+  left: 44%;
+  bottom: 40%;
+  z-index: 5;
+}
+
+.fa {
+  font-size: 26px;
+}
+.fa.fa-envelope {
+  font-size: 24px;
+}
+
+.fa.fa-play-circle {
+  font-size: 52px;
+}
+
+.video_foot {
+  text-align: center;
+  height: 8%;
+  padding: 0.0em;
+  background-image: url("images/Catsuko_GettingBadLink.jpg");
+  background-size: cover;
+  opacity: 0.7;
+}
+.emo {
+  font-size: 0.9em;
+  margin: 0.5em;
+  vertical-align: text-bottom;
+}
+
+.title_link {
+  font-size: 1em;
+  font-style: bold;
+  text-decoration: none;
+  color: var(--primary);
+  background-image: url("images/Catsuko_GettingBadLink.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bolt_link {
+  font-style: bold;
+  text-decoration: none;
+}
+
+#links {
+  margin: 0em 0em 5em 0em;
+  padding:0;
+  width: 80%;
+  height: 22%;
+
+  
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0em 4em;
+  height: 100%;
+
+
+
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 20%;
+  margin: 1em 0em;
+}
+
+.separator {
+  padding: 0.5em;
+  border-radius: 2px;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  background-size: 42px 42px;
+
+}
+
+.icon_link {
+  font-size: 1.5em;
+  font-weight: bold;
+  position: relative;
+  top: 0.4em;
+  background-image: url("images/Catsuko_Icon_Clip.jpg");
+  background-size: cover;
+  background-position: center ;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.symbol {
+  color: var(--primary);
+}
+
+i{display: none;}
+
+
+.S,
+.secondary{
+  color: var(--secondary)
+}
+.white {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.back-white{
+  background-color: white;
+}
+
+
+#head, #S,
+.primary{
+  color: var( --primary );
+}
+
+.backprimary{
+  background-color: var( --primary);
+}
+
+
+.play_icon,
+.orange{
+  color: var( --orange);
+}
+
+.video_foot,
+.backsecondary{
+  background-color:rgba(255, 255, 255, 0.5)
+}
+
+main,
+.back-black {
+  background-color: var( --black );
+}
+
+
+#S {
+  /* animation: flickerS 10s linear alternate infinite; */
+}
+
+.S {
+  position: absolute;
+  left: 47vw;
+  top: 5%;
+  font-size: 0.9em;
+  animation: flickerBolt 10s linear alternate infinite;
+}
+
+.insta {
+  animation: flicker1 7s linear normal infinite;
+}
+
+.yt,
+.fb {
+  animation: flicker2 7s linear normal infinite;
+}
+
+.bc,
+.sc {
+  animation: flicker3 7s linear normal infinite;
+}
+
+.mail {
+  animation: flicker4 7s linear normal infinite;
+}
+
+@keyframes flickerS {
+  0% {
+    opacity: 1;
+  }
+  97% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes flickerBolt {
+  0% {
+    opacity: 0;
+  }
+  97% {
+    opacity: 0;
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flicker1 {
+  0% {
+    color: var(--primary);
+  }
+  95% {
+    color: var(--primary);
+  }
+  96% {
+    color: var(--secondary);
+  }
+  97% {
+    color: var(--primary);
+  }
+  100% {
+    color: var(--primary);
+  }
+}
+
+@keyframes flicker2 {
+  0% {
+    color: var(--primary);
+  }
+  96% {
+    color: var(--primary);
+  }
+  97% {
+    color: var(--secondary);
+  }
+  98% {
+    color: var(--primary);
+  }
+  100% {
+    color: var(--primary);
+  }
+}
+
+@keyframes flicker3 {
+  0% {
+    color: var(--primary);
+  }
+  97% {
+    color: var(--primary);
+  }
+  98% {
+    color: var(--secondary);
+  }
+  99% {
+    color: var(--primary);
+  }
+  100% {
+    color: var(--primary);
+  }
+}
+
+@keyframes flicker4 {
+  0% {
+    color: var(--primary);
+  }
+  98% {
+    color: var(--primary);
+  }
+  99% {
+    color: var(--secondary);
+  }
+  100% {
+    color: var(--primary);
+  }
+}
+
+@viewport {
+  orientation: portrait;
+}
+
+
+@media screen and (min-width: 568px) {
+
+  body{
+      /* Firefox */
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  /* Safari and Chrome */
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  /* W3C */
+  display: box;
+  box-pack: center;
+  box-align: center;
+  }
+
+  main {
+    width: 100vw;
+    height: 100vw;
+    max-width: 800px;
+    max-height: 800px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin: auto;
+  }
+
+  .card {
+    width: 100%;
+    margin: auto;
+    overflow: visible;
+  }
+
+  #head {
+    font-size: 1.4em;
+  }
+
+  .S{
+    font-size: 0.9em;
+    left:48.5%;
+    top:5%;
+  }
+
+  .title_link {
+    font-size: 1.2em;
+  }
+
+  #video {
+    width: 85%;
+  }
+
+  .video_foot{
+    font-size: 1.4em;
+  }
+
+  .play_icon{
+    left: 46%;
+  }
+
+  #links {
+    width: 45%;
+    height: 30%;
+  }
+
+  .icon{
+    font-size: 1.5em;
+  }
+
+.emo {
+  font-size: 1em;
+}
+
+}
+
+
